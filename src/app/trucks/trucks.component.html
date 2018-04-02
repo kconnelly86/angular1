@@ -1,3 +1,11 @@
-<h2>{{ truck.name }} Details</h2>
+<!-- the bewlow h2 will display the food truck title as the .name poperty and id as well as the Name.name of the current truck. -->
+<h2>{{ truck.name | uppercase }} Details</h2>
 <div><span>Id: </span>{{truck.id}}</div>
-<div><span>Name: </span>{{truck.name}}</div>
+<div><span>Name: </span>{{truck.name}}</div> 
+
+<!-- the below will perform the 2 way binding with the ngModel -->
+<div>
+  <label>
+    <input [(ngModel)]= "truck.name" placeholder="name">
+  </label>
+</div>
