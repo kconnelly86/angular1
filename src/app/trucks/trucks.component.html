@@ -1,4 +1,10 @@
 <!-- the bewlow h2 will display the food truck title as the .name poperty and id as well as the Name.name of the current truck. -->
+<h2>Food Trucks</h2>
+<ul>
+  <li *ngFor="let truck of trucks">
+    <span class='badge'>{{truck.id}}</span> {{truck.name}}
+  </li>
+</ul>
 <h2>{{ truck.name | uppercase }} Details</h2>
 <div><span>Id: </span>{{truck.id}}</div>
 <div><span>Name: </span>{{truck.name}}</div> 

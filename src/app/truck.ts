@@ -1,4 +1,4 @@
 export class Truck {
-    id: 1;
+    id: number;
     name: string;
 }
