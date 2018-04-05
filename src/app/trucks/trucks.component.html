@@ -1,7 +1,7 @@
 <!-- the bewlow h2 will display the food truck title as the .name poperty and id as well as the Name.name of the current truck. -->
 <h2>Food Trucks</h2>
 <ul class="trucks">
-  <li *ngFor="let truck of trucks" (click)="onSelect(truck)">
+  <li *ngFor="let truck of trucks" [class.selected]="hero === selectedHero" (click)="onSelect(truck)">
     <span class='badge'>{{truck.id}}</span> {{truck.name}}
   </li>
 </ul>
