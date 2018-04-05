@@ -9,13 +9,13 @@ import { TRUCKS } from '../mock-trucks';
 export class TrucksComponent implements OnInit {
 trucks = TRUCKS;
 
-truck: Truck = {
-  id: 1,
-  name: 'Central BBQ'
-};
+selectedTruck: Truck;
+
   constructor() { }
 
   ngOnInit() {
   }
-
+onSelect(truck: Truck): void {
+  this.selectedTruck = truck;
+}
 }
