@@ -1,20 +1,25 @@
 <!-- the bewlow h2 will display the food truck title as the .name poperty and id as well as the Name.name of the current truck. -->
 <h2>Food Trucks</h2>
 <ul class="trucks">
-  <li *ngFor="let truck of trucks" [class.selected]="hero === selectedHero" (click)="onSelect(truck)">
-    <span class='badge'>{{truck.id}}</span> {{truck.name}}
+  <li *ngFor="let truck of trucks"
+   [class.selected]="hero === selectedHero" 
+   (click)="onSelect(truck)">
+  <span class='badge'>{{truck.id}}</span> 
+  {{truck.name}}
   </li>
 </ul>
 <!-- wrapping the h2 in a div in order to give it the *ngIf attribute so it hides the empty detail -->
 <div *ngIf="selectedTruck">
-<h2>{{ selectedTruck.name | uppercase }} Details</h2>
+<h2>{{ selectedTruck.name | uppercase }} 
+  Details</h2>
 <div><span>Id: </span>{{selectedTruck.id}}</div>
 
 
 <!-- the below will perform the 2 way binding with the ngModel -->
 <div>
   <label>name:
-    <input [(ngModel)]= "selectedTruck.name" placeholder="name">
+    <input [(ngModel)]= "selectedTruck.name"
+     placeholder="name">
   </label>
 </div>
 </div>
