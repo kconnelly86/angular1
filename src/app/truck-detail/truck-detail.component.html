@@ -1,3 +1,11 @@
-<p>
-  truck-detail works!
-</p>
+<!-- wrapping the h2 in a div in order to give it the *ngIf attribute so it hides the empty detail -->
+<div *ngIf="selectedTruck">
+  <h2>{{ selectedTruck.name | uppercase }} Details</h2>
+  <div><span>Id: </span>{{selectedTruck.id}}</div>
+  <!-- the below will perform the 2 way binding with the ngModel -->
+  <div>
+    <label>name:
+      <input [(ngModel)]= "selectedTruck.name" placeholder="name">
+    </label>
+  </div>
+  </div>
