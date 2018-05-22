@@ -4,8 +4,7 @@
   <li *ngFor="let truck of trucks"
    [class.selected]="hero === selectedHero" 
    (click)="onSelect(truck)">
-  <span class='badge'>{{truck.id}}</span> 
-  {{truck.name}}
+  <span class='badge'>{{truck.id}}</span> {{truck.name}}
   </li>
 </ul>
 
