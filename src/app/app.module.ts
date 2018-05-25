@@ -6,20 +6,23 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { TrucksComponent } from './trucks/trucks.component';
 import { TrucksDetailComponent } from './trucks-detail/trucks-detail.component';
+import { TruckService } from './truck.service';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     TrucksComponent,
-    TrucksDetailComponent
+    TrucksDetailComponent,
+  
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    
 
   ],
-  providers: [],
+  providers: [TruckService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
