@@ -23,6 +23,7 @@ onSelect(truck: Truck): void {
   this.selectedTruck = truck;
 }
 getTrucks(): void {
-  this.trucks = this.truckService.getTrucks();
-}
+  this.truckService.getTrucks()
+      .subscribe(trucks => this.trucks = trucks);
+} 
 }
