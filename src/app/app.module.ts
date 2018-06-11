@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { TrucksComponent } from './trucks/trucks.component';
 import { TrucksDetailComponent } from './trucks-detail/trucks-detail.component';
 import { TruckService } from './truck.service';
+import { MessagesComponent } from './messages/messages.component';
 
 
 @NgModule({
@@ -14,6 +15,7 @@ import { TruckService } from './truck.service';
     AppComponent,
     TrucksComponent,
     TrucksDetailComponent,
+    MessagesComponent,
   
   ],
   imports: [
