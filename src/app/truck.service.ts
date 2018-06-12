@@ -11,6 +11,7 @@ export class TruckService {
 
   constructor(private messageService: MessageService) { }
   getTrucks(): Observable<Truck[]> {
+    this.messageService.add('TruckService: fetched trucks');
     return of(TRUCKS);
   }
   }
