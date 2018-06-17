@@ -7,6 +7,8 @@ import { TrucksDetailComponent } from './trucks-detail/trucks-detail.component';
 import { TruckService } from './truck.service';
 import { MessagesComponent } from './messages/messages.component';
 import { MessageService } from './message.service';
+import { AppRoutingModule } from './/app-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 
 @NgModule({
@@ -15,12 +17,14 @@ import { MessageService } from './message.service';
     TrucksComponent,
     TrucksDetailComponent,
     MessagesComponent,
+    DashboardComponent,
     
   
   ],
   imports: [
     BrowserModule,
     FormsModule,
+    AppRoutingModule,
     
 
   ],
