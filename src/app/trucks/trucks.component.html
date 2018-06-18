@@ -1,9 +1,9 @@
 <!-- the bewlow h2 will display the food truck title as the .name poperty and id as well as the Name.name of the current truck. -->
 <h2>Food Truck Bucket list</h2>
 <ul class="trucks">
-  <li *ngFor="let truck of trucks"
-   [class.selected]="truck === selectedTruck" 
-   (click)="onSelect(truck)">
-  <span class='badge'>{{truck.id}}</span> {{truck.name}}
-  </li>
-</ul>
+    <li *ngFor="let truck of trucks">
+        <a routerLink="/detail/{{truck.id}}">
+          <span class="badge">{{truck.id}}</span> {{truck.name}}
+        </a>
+      </li>
+</ul> 

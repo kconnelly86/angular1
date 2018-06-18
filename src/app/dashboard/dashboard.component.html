@@ -1,6 +1,7 @@
 <h3>Top Trucks</h3>
 <div class="grid grid-pad">
-  <a *ngFor="let truck of trucks" class="col-1-4">
+    <a *ngFor="let truck of trucks" class="col-1-4"
+    routerLink="/detail/{{truck.id}}">
     <div class="module truck">
       <h4>{{truck.name}}</h4>
     </div>

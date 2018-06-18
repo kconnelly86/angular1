@@ -10,8 +10,6 @@ import { TruckService } from '../truck.service';
 
 export class TrucksComponent implements OnInit {
 
-selectedTruck: Truck; 
-
 trucks: Truck[];
 
   constructor(private truckService: TruckService) { }
@@ -19,9 +17,6 @@ trucks: Truck[];
   ngOnInit() {
      this.getTrucks();
   }
-onSelect(truck: Truck): void {
-  this.selectedTruck = truck;
-}
 getTrucks(): void {
   this.truckService.getTrucks()
       .subscribe(trucks => this.trucks = trucks);
