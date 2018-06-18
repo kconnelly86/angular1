@@ -18,5 +18,6 @@ export class DashboardComponent implements OnInit {
  
   getTrucks(): void {
     this.truckService.getTrucks()
-      .subscribe(trucks => this.trucks = trucks.slice(1, 5));  }
+      .subscribe(trucks => this.trucks = trucks.slice(1, 5));
+      }
 }

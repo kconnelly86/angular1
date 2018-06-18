@@ -25,5 +25,8 @@ export class TrucksDetailComponent implements OnInit {
     this.truckService.getTruck(id)
       .subscribe(truck => this.truck = truck);
   }
+  goBack(): void {
+    this.location.back();
+  }
 
 }
